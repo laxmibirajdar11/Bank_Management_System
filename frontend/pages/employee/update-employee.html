@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Update Employee</title>
+
+    <link rel="stylesheet" href="../../css/styles.css" />
+</head>
+<body>
+    <div class="container center-box">
+        <h1>Update Employee</h1>
+
+        <form id="updateEmployeeForm" class="form">
+            <input type="hidden" id="empId" />
+
+            <label>Name</label>
+            <input type="text" id="name" required />
+
+            <label>Department</label>
+            <input type="text" id="department" required />
+
+            <label>Salary</label>
+            <input type="number" id="salary" required />
+
+            <label>Email</label>
+            <input type="email" id="email" required />
+
+            <button type="submit" class="btn primary">Update Employee</button>
+        </form>
+    </div>
+
+    <script src="../../js/employee.js"></script>
+</body>
+</html>

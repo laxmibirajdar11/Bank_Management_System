@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard</title>
+
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/navbar.css">
+    <link rel="stylesheet" href="../../css/sidebar.css">
+    <link rel="stylesheet" href="../../css/dashboard.css">
+    <link rel="stylesheet" href="../../css/table.css">
+</head>
+<body>
+
+    <div id="navbar-placeholder"></div>
+
+    <div class="app">
+        <aside class="sidebar" id="sidebar-placeholder"></aside>
+
+        <main class="main">
+
+            <div class="dashboard-header">
+                <h1 class="dashboard-title">Admin Dashboard</h1>
+
+                <div class="dashboard-actions">
+                    <a href="add-admin.html" class="btn primary">+ Add Admin</a>
+                </div>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h2 id="totalAdmins">0</h2>
+                    <p>Total Admins</p>
+                </div>
+            </div>
+
+            <div class="table-container">
+                <table class="table" id="adminTable">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                      <!-- JS adds data -->
+                    </tbody>
+                </table>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="../../js/common.js" defer></script>
+    <script src="../../js/admin.js" defer></script>
+
+</body>
+</html>

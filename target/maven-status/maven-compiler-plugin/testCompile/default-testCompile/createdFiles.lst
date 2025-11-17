@@ -1,0 +1,5 @@
+com\bms\AppTest.class
+com\bms\EmployeeServiceTest.class
+com\bms\AdminServiceTest.class
+com\bms\AuditServiceTest.class
+com\bms\ReportServiceTest.class
