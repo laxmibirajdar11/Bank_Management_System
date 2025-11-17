@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Audit Dashboard</title>
+
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/navbar.css">
+    <link rel="stylesheet" href="../../css/sidebar.css">
+    <link rel="stylesheet" href="../../css/table.css">
+    <link rel="stylesheet" href="../../css/dashboard.css">
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+
+    <div class="app">
+        <aside id="sidebar-placeholder"></aside>
+
+        <main class="main">
+            <div class="dashboard-header">
+                <h1 class="dashboard-title">Audit Logs</h1>
+
+                <div class="dashboard-actions">
+                    <button class="btn primary" onclick="addMockAudit()">+ Add Mock Log</button>
+                </div>
+            </div>
+
+            <div class="table-container">
+                <table class="table" id="auditTable">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>User ID</th>
+                            <th>Action</th>
+                            <th>Timestamp</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbo

@@ -1,0 +1,53 @@
+/* ===== Modern Table Styling ===== */
+
+.table-container {
+    background: var(--card);
+    padding: 18px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    margin-top: 16px;
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th {
+    background: var(--blue-700);
+    color: white;
+    padding: 12px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.table td {
+    padding: 12px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.table tr:hover td {
+    background: rgba(0, 71, 171, 0.05);
+}
+
+/* ===== Action Buttons ===== */
+
+.action-btn {
+    padding: 6px 12px;
+    font-size: 13px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+}
+
+.edit-btn {
+    background: var(--blue-500);
+    color: white;
+}
+
+.delete-btn {
+    background: var(--danger);
+    color: white;
+}

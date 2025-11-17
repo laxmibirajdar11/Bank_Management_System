@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bank Management System — Dashboard</title>
+
+  <!-- Base styles -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Page-specific (will be used later) -->
+  <link rel="stylesheet" href="css/dashboard.css" media="print">
+</head>
+<body class="theme-light">
+
+  <!-- Top navbar (will be loaded from components/navbar.html via common.js) -->
+  <div id="navbar-placeholder"></div>
+
+  <div class="app">
+    <!-- Sidebar (will be loaded from components/sidebar.html via common.js) -->
+    <aside id="sidebar-placeholder" class="sidebar"></aside>
+
+    <!-- Main content -->
+    <main class="main">
+      <section class="hero-card">
+        <div class="hero-left">
+          <h1>Bank Management System</h1>
+          <p class="lead">Modern dashboard for Admin • Employee • Audit • Reports</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="pages/admin/admin-dashboard.html">Open Admin Module</a>
+            <a class="btn outline" href="pages/employee/employee-dashboard.html">Open Employee Module</a>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="card-stats">
+            <div class="stat">
+              <div class="stat-number" id="statAdmins">—</div>
+              <div class="stat-label">Admins</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number" id="statEmployees">—</div>
+              <div class="stat-label">Employees</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number" id="statReports">—</div>
+              <div class="stat-label">Reports</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cards-grid">
+        <article class="card">
+          <h3>Quick Actions</h3>
+          <ul class="quick-list">
+            <li><a href="pages/admin/add-admin.html">Add Admin</a></li>
+            <li><a href="pages/employee/add-employee.html">Add Employee</a></li>
+            <li><a href="pages/audit/audit-dashboard.html">View Audit Logs</a></li>
+            <li><a href="pages/report/report-dashboard.html">Generate Report</a></li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Recent Activities</h3>
+          <div id="recentActivities">
+            <!-- filled by common.js -->
+            <p class="muted">No activities yet — demo mode</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Notes</h3>
+          <p class="muted">This is a frontend-only demo. Later your backend team can expose `/api/*` endpoints and you only need to update `js/common.js` fetch URLs.</p>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <!-- Common scripts -->
+  <script src="js/common.js" defer></script>
+
+</body>
+</html>

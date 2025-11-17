@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Employee Dashboard</title>
+
+    <link rel="stylesheet" href="../../css/styles.css" />
+    <link rel="stylesheet" href="../../css/navbar.css" />
+    <link rel="stylesheet" href="../../css/sidebar.css" />
+    <link rel="stylesheet" href="../../css/dashboard.css" />
+    <link rel="stylesheet" href="../../css/table.css" />
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+
+    <div class="app">
+        <aside class="sidebar" id="sidebar-placeholder"></aside>
+
+        <main class="main">
+            <div class="dashboard-header">
+                <h1 class="dashboard-title">Employee Dashboard</h1>
+
+                <div class="dashboard-actions">
+                    <a href="add-employee.html" class="btn primary">+ Add Employee</a>
+                </div>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h2 id="totalEmployees">0</h2>
+                    <p>Total Employees</p>
+                </div>
+            </div>
+
+            <div class="table-container">
+                <table class="table" id="employeeTable">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Department</th>
+                            <th>Salary</th>
+                            <th>Email</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+    <script src="../../js/common.js" defer></script>
+    <script src="../../js/employee.js" defer></script>
+</body>
+</html>
